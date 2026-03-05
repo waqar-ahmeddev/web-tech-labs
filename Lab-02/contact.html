@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Contact Us</title>
+<style>
+body{
+    font-family: Arial;
+    background:#f4f4f4;
+}
+.container{
+    width:400px;
+    margin:50px auto;
+    background:white;
+    padding:20px;
+    border-radius:8px;
+    box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+input, textarea{
+    width:100%;
+    padding:10px;
+    margin:8px 0;
+}
+button{
+    width:100%;
+    padding:10px;
+    background:#4CAF50;
+    color:white;
+    border:none;
+}
+.success{
+    color:green;
+}
+.error{
+    color:red;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+<h2>Contact Form</h2>
+
+<form id="contactForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+    
+    <input type="text" name="name" id="name" placeholder="Your Name" required>
+    
+    <input type="email" name="email" id="email" placeholder="Your Email" required>
+    
+    <textarea name="message" id="message" rows="5" placeholder="Your Message" required></textarea>
+    
+    <button type="submit">Send Message</button>
+</form>
+
+<p id="responseMessage"></p>
+
+</div>
+
+<script>
+const form = document.getElementById('contactForm');
+const responseMessage = document.getElementById('responseMessage');
+
+form.addEventListener('submit', async function(e) {
+    e.preventDefault();
+
+    const formData = new FormData(form);
+
+    try {
+        const response = await fetch(form.action, {
+            method: form.method,
+            body: formData,
+            headers: {
+                'Accept': 'application/json'
+            }
+        });
+
+        if (response.ok) {
+            responseMessage.innerHTML = "Message sent successfully!";
+            responseMessage.className = "success";
+            form.reset();
+        } else {
+            responseMessage.innerHTML = "Oops! Something went wrong.";
+            responseMessage.className = "error";
+        }
+
+    } catch (error) {
+        responseMessage.innerHTML = "Network error. Please try again.";
+        responseMessage.className = "error";
+    }
+});
+</script>
+
+</body>
+</html>
