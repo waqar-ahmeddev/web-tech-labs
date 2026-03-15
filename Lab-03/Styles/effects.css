@@ -1,0 +1,445 @@
+/* Page Style */
+/* 
+/* body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background: #f4f6fb;
+  line-height: 1.6;
+}
+
+h1,
+h2 {
+  text-align: center;
+  color: darkblue;
+}
+
+section {
+  margin: 30px 0;
+  padding: 20px;
+  border: 1px solid #ccc;
+  background: white;
+} */
+
+/* Solid Background */
+
+.solid {
+  background-color: lightcoral;
+  color: white;
+}
+
+/* Image Repeat Section */
+
+.image-repeat {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.box {
+  width: 200px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+  font-weight: bold;
+
+  /* pattern image */
+  background-image: url("../images/pattern.png");
+}
+
+/* Repeat Types */
+
+.repeat {
+  background-repeat: repeat;
+}
+
+.repeat-x {
+  background-repeat: repeat-x;
+}
+
+.repeat-y {
+  background-repeat: repeat-y;
+}
+
+.no-repeat {
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* Gradients */
+
+.gradients {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.gradient {
+  width: 300px;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+}
+
+.linear {
+  background: linear-gradient(to right, #ff7e5f, #feb47b);
+}
+
+.radial {
+  background: radial-gradient(circle, #43cea2, #185a9d);
+}
+
+/* Multiple Background Layers */
+
+.multi-layer {
+  background-image:
+    url("../images/OIP.jpg"), linear-gradient(to right, #ffefba, #ffffff);
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 200px, cover;
+  height: 200px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Blend Modes */
+
+.blend-modes {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.blend {
+  width: 300px;
+  height: 150px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: white;
+  font-weight: bold;
+
+  background-image:
+    url("../images/OIP.jpg"), linear-gradient(to right, #ff0000, #0000ff);
+
+  background-size: cover;
+}
+
+.overlay {
+  background-blend-mode: overlay;
+}
+
+.multiply {
+  background-blend-mode: multiply;
+}
+
+.screen {
+  background-blend-mode: screen;
+}
+
+/* Footer */
+
+footer {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 14px;
+} */
+
+/*.........................................*/
+/* transfoam style */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: #f4f6f9;
+  text-align: center;
+}
+
+header {
+  background: #1e3a8a;
+  color: white;
+  padding: 30px;
+}
+
+header h1 {
+  margin-bottom: 10px;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  padding: 40px;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+  margin-bottom: 20px;
+}
+
+.box {
+  width: 120px;
+  height: 120px;
+  margin: auto;
+  background: #3b82f6;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  border-radius: 8px;
+
+  transition: 0.6s;
+}
+
+.rotate .box:hover {
+  transform: rotate(45deg);
+}
+
+.scale .box:hover {
+  transform: scale(1.4);
+}
+
+.translate .box:hover {
+  transform: translateX(50px);
+}
+
+.threeD {
+  perspective: 500px;
+}
+
+.threeD .box:hover {
+  transform: rotateY(180deg);
+}
+
+.origin .box {
+  transform-origin: left bottom;
+}
+
+.origin .box:hover {
+  transform: rotate(45deg);
+}
+
+.combine .box:hover {
+  transform: scale(1.2) rotate(20deg) translateY(-20px);
+}
+
+footer {
+  margin-top: 20px;
+  padding: 20px;
+  background: #111;
+  color: white;
+}
+
+
+
+/*...........................................................*/
+/* Advance style*/
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+background:#f4f6fb;
+text-align:center;
+}
+
+header{
+background:#111827;
+color:white;
+padding:40px;
+}
+
+.container{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:30px;
+padding:40px;
+}
+
+.card{
+background:white;
+padding:30px;
+border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* Gradient Text */
+
+.gradient-text{
+background:linear-gradient(45deg,#ff4d4d,#ffcc00,#00ccff);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+font-weight:bold;
+}
+
+/* Custom Checkbox */
+
+.custom-check{
+display:block;
+position:relative;
+padding-left:35px;
+margin:10px;
+cursor:pointer;
+font-size:18px;
+}
+
+.custom-check input{
+position:absolute;
+opacity:0;
+}
+
+.checkmark{
+position:absolute;
+left:0;
+top:0;
+height:20px;
+width:20px;
+background:#ddd;
+border-radius:4px;
+}
+
+.custom-check input:checked ~ .checkmark{
+background:#2563eb;
+}
+
+.checkmark:after{
+content:"";
+position:absolute;
+display:none;
+}
+
+.custom-check input:checked ~ .checkmark:after{
+display:block;
+}
+
+.checkmark:after{
+left:7px;
+top:3px;
+width:5px;
+height:10px;
+border:solid white;
+border-width:0 2px 2px 0;
+transform:rotate(45deg);
+}
+
+/* Custom Radio Buttons */
+
+.custom-radio{
+display:block;
+position:relative;
+padding-left:35px;
+margin:10px;
+cursor:pointer;
+}
+
+.custom-radio input{
+position:absolute;
+opacity:0;
+}
+
+.radiomark{
+position:absolute;
+left:0;
+top:0;
+height:20px;
+width:20px;
+background:#ddd;
+border-radius:50%;
+}
+
+.custom-radio input:checked ~ .radiomark{
+background:#10b981;
+}
+
+.radiomark:after{
+content:"";
+position:absolute;
+display:none;
+}
+
+.custom-radio input:checked ~ .radiomark:after{
+display:block;
+}
+
+.radiomark:after{
+top:6px;
+left:6px;
+width:8px;
+height:8px;
+border-radius:50%;
+background:white;
+}
+
+/* Loading Animation */
+
+.loader{
+width:50px;
+height:50px;
+border:6px solid #ddd;
+border-top:6px solid #2563eb;
+border-radius:50%;
+margin:auto;
+animation:spin 1s linear infinite;
+}
+
+@keyframes spin{
+0%{transform:rotate(0deg);}
+100%{transform:rotate(360deg);}
+}
+
+/* Text Clipping with Image */
+
+.image-text{
+font-size:40px;
+font-weight:bold;
+background:url("https://picsum.photos/600/400") center/cover;
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+}
+
+/* Complex Shadow */
+
+.shadow-demo{
+box-shadow:
+0 5px 10px rgba(0,0,0,0.15),
+0 15px 30px rgba(0,0,0,0.1),
+0 30px 60px rgba(0,0,0,0.05);
+transition:0.4s;
+}
+
+.shadow-demo:hover{
+transform:translateY(-10px);
+}
+
+footer{
+background:#111;
+color:white;
+padding:20px;
+margin-top:20px;
+}

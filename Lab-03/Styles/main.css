@@ -1,0 +1,103 @@
+  /* Element selector */
+h1 {
+  color: darkblue;
+}
+
+/* Class selector */
+.intro {
+  font-style: italic;
+}
+
+/* ID selector */
+#container {
+  border: 2px solid gray;
+  padding: 10px;
+}
+
+/* Universal selector */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Grouping selector */
+h1, footer {
+  text-align: center;
+}
+
+
+/* Select link with target attribute */
+a[target="_blank"] {
+  color: red;
+}
+
+/* Select input of type email */
+input[type="email"] {
+  border: 2px solid green;
+}
+
+/* Select element with title attribute */
+a[title] {
+  text-decoration: underline;
+}
+
+
+/* Descendant combinator */
+#container ul li {
+  list-style-type: square;
+}
+
+/* Child combinator */
+#container > a {
+  font-weight: bold;
+}
+
+/* Adjacent sibling combinator */
+.intro + #container {
+  background-color: #f0f0f0;
+}
+
+/* General sibling combinator */
+.intro ~ footer {
+  background-color: lightgray;
+}
+
+
+/* Hover effect */
+a:hover {
+  color: orange;
+}
+
+/* First child */
+li:first-child {
+  font-weight: bold;
+}
+
+/* Last child */
+li:last-child {
+  color: purple;
+}
+
+/* nth-child */
+li:nth-child(2) {
+  background-color: #e0e0ff;
+}
+
+/* Focus */
+input:focus {
+  outline: 2px solid blue;
+}
+
+
+/* Add content before */
+h1::before {
+  content: "★ ";
+  color: gold;
+}
+
+/* Add content after */
+footer p::after {
+  content: " © 2026";
+  font-size: 0.9em;
+}
+
