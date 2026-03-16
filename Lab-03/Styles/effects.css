@@ -1,27 +1,3 @@
-/* Page Style */
-/* 
-/* body {
-  font-family: Arial, sans-serif;
-  margin: 20px;
-  background: #f4f6fb;
-  line-height: 1.6;
-}
-
-h1,
-h2 {
-  text-align: center;
-  color: darkblue;
-}
-
-section {
-  margin: 30px 0;
-  padding: 20px;
-  border: 1px solid #ccc;
-  background: white;
-} */
-
-/* Solid Background */
-
 .solid {
   background-color: lightcoral;
   color: white;
