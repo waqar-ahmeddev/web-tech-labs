@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Responsive Layout</title>
+
+<link rel="stylesheet" href="../styles/base.css">
+<link rel="stylesheet" href="../styles/responsive.css">
+
+</head>
+
+<body>
+
+<h1>Responsive Design Example</h1>
+
+<img src="https://media.istockphoto.com/id/1167341186/photo/watching-sunset-at-sea-ko-samui-thailand.webp?a=1&b=1&s=612x612&w=0&k=20&c=UqqcoiqE_ZQfFR42d_oxQCuvVAKME6BlGnewDCj6jBE=" alt="Responsive Image">
+
+<p>
+Try resizing your browser window to see how the layout adapts to different screen sizes.</p>
+
+</body>
+</html>
